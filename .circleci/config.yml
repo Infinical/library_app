@@ -40,6 +40,7 @@ jobs:
           name: install dependencies
           command: |
             sudo gem update --system
+            sudo gem install rspec
             sudo gem uninstall bundler
             sudo rm /usr/local/bin/bundle
             sudo rm /usr/local/bin/bundler
