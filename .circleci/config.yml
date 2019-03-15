@@ -50,7 +50,7 @@ jobs:
 
       - run: sudo apt install -y postgresql-client || true
 
-      - run: bundle exec cucumber
+      
 
       - save_cache:
           paths:
