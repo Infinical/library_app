@@ -1,5 +1,4 @@
 Feature: List books on the welcome page
-
    As a visitor,
    when i visit the applications welcome page
    I would like to see a list of books
