@@ -50,8 +50,11 @@ jobs:
 
       - run: sudo apt install -y postgresql-client || true
 
+<<<<<<< HEAD
       
 
+=======
+>>>>>>> cb704f55d67a29ee00e31a7fca6ba265ca868b5c
       - save_cache:
           paths:
             - ./vendor/bundle
