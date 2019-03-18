@@ -44,9 +44,9 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
-   gem 'rspec-core', '~> 3.8'
+  gem 'rspec-core', '~> 3.8'
   gem 'rspec_junit_formatter', '~> 0.4.1'
-  
+  gem 'simplecov', require: false
 
 end
 
