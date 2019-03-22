@@ -45,7 +45,7 @@ jobs:
             sudo rm /usr/local/bin/bundle
             sudo rm /usr/local/bin/bundler
             sudo gem install bundler
-            bundle install 
+            bundle install
 
 
       - run: sudo apt install -y postgresql-client || true
@@ -57,26 +57,13 @@ jobs:
 
       # Database setup
       - run: bundle exec rake db:create
+      - run: bin/rails db:migrate RAILS_ENV=test
       - run: bundle exec rake db:schema:load
 
       # run tests!
       - run:
           name: run tests
-          command: |
-            mkdir /tmp/test-results
-            TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
-              circleci tests split --split-by=timings)"
+          command: bundle exec rake ci:tests
 
-            bundle exec rspec \
-              --format progress \
-              --format RspecJunitFormatter \
-              --out /tmp/test-results/rspec.xml \
-              --format progress \
-              $TEST_FILES
-
-      # collect reports
-      - store_test_results:
-          path: /tmp/test-results
       - store_artifacts:
-          path: /tmp/test-results
-          destination: test-results
+          path: coverage
