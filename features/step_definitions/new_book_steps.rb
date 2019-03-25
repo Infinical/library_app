@@ -7,9 +7,9 @@ Then('I expect to see {string}') do |string|
 end
 
 Then('I fill {string} with {string}') do |_string, _string2|
-  fill_in 'title',	with: 'React'
-  fill_in 'isbn',	with: '12345678'
-  fill_in 'year',	with: '2017'
+  fill_in 'Title',	with: 'React'
+  fill_in 'ISBN',	with: '12345678'
+  fill_in 'Year',	with: '2017'
 end
 
 Then('I click on {string}') do |_string|

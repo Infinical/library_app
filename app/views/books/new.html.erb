@@ -2,17 +2,17 @@
 <%= form_with scope: :book, url: books_path, local: true do |form| %>
 
 <p>
-<%=form.label :Book_Title%><br>
+<%=form.label :Title%><br>
 <%=form.text_field :title%>
 </p>
 
 <p>
-<%=form.label :Book_ISBN%><br>
+<%=form.label :ISBN%><br>
 <%=form.text_field :isbn%>
 </p>
 
 <p>
-<%=form.label :Year_Published%><br>
+<%=form.label :Year%><br>
 <%=form.text_field :year%>
 </p>
 
