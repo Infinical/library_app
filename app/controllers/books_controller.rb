@@ -1,14 +1,16 @@
-# Book Controller
 class BooksController < ApplicationController
-  def create
-    @book = Book.new(params[:book])
-
-    if @book.save
-      flash[:success] = "Book Successfully Created"
-    else
-      render 'new'
+    def new
     end
-  end
 
-  
+    def create
+        @book = Book.new(book_params)
+
+        @book.save
+       
+    end
+
+    private
+    def book_params
+                params.require(:book).permit(:title, :isbn, :year)
+    end
 end
