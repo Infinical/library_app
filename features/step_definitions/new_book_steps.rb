@@ -1,5 +1,5 @@
-When('I am on the Create New Book Page') do
-  visit books_create_path
+When('I am on the New Book Page') do
+  visit new_book_path
 end
 
 Then('I expect to see {string}') do |string|
