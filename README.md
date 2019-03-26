@@ -45,11 +45,11 @@ If you wish to make some changes in this application or fix a bug, you can fork 
 
 Below are the steps
 
-    Fork it
-    Create a branch(git checkout -b branch name)
-    Commit your changes(git commit -m 'Commit Message ')
-    Push to the branch(git push origin branch name)
-    Create a pull request
+1. Fork it
+2. Create a branch(git checkout -b branch name)
+3. Commit your changes(git commit -m 'Commit Message ')
+4. Push to the branch(git push origin branch name)
+5. Create a pull request
 
 ## Learn More
 https://guides.rubyonrails.org/getting_started.html
