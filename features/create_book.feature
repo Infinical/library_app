@@ -9,7 +9,7 @@ Feature: Create a new book
         And I fill 'Title' with 'React'
         And I fill 'Isbn' with '12345678'
         And I fill 'Year' with '2017'
-        And I click on 'Save Book'
+        And I click on 'Create Book'
         Then I should see "Book successfully created!"
 
     Scenario: Create a new book with invalid details
@@ -18,5 +18,5 @@ Feature: Create a new book
         And I fill 'Title' with ''
         And I fill 'Isbn' with '4563728'
         And I fill 'Year' with '2016'
-        And I click on 'Save Book'
+        And I click on 'Create Book'
         Then I should see "There were problems while creating the book"
