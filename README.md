@@ -1,24 +1,56 @@
-# README
+# Library App Readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The app offers basic functionality of a library by connecting  the users and authors.The authors are able to track how well their books are doing while the most active readers are able to compare themselves to other users.The app aims to encourage upcoming authors by providing a platform in which they can showcase their work 
 
-Things you may want to cover:
+## Setting Up
 
-* Ruby version
+*** The app runs on ruby ***
 
-* System dependencies
+Make sure you have the latest ruby version installed by checking your ruby version
+```
+ruby -v
+```
 
-* Configuration
+Install the rails gem 
 
-* Database creation
+```
+gem install rails
+```
+## Cloning And Running
+Clone the repo 
+```
+git clone https://github.com/Infinical/library_app
+```
+Move to the directory where you cloned the app
+```
+cd library_app
+```
 
-* Database initialization
+Make sure to install all the gems and their dependencies by :
+```
+bundle install
+```
+To launch the application:
+``` 
+rails s
+```
 
-* How to run the test suite
+## Tracking Issues
+The app issues are listed on Pivotal Tracker.Follow the link to see the current open issues 
+*** https://www.pivotaltracker.com/n/projects/2318767 ***
 
-* Services (job queues, cache servers, search engines, etc.)
+## If you wish to contribute
 
-* Deployment instructions
+If you wish to make some changes in this application or fix a bug, you can fork the repository
 
-* ...
+Below are the steps
+
+1. Fork it
+1. Create a branch(git checkout -b branch name)
+1. Commit your changes(git commit -m 'Commit Message ')
+1. Push to the branch(git push origin branch name)
+1. Create a pull request
+
+## Learn More
+https://guides.rubyonrails.org/getting_started.html
+ 
