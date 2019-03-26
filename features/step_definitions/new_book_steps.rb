@@ -13,4 +13,3 @@ end
 Then('I click on {string}') do |string|
   click_button string
 end
-
