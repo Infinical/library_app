@@ -1,0 +1,22 @@
+<h1>New Book Form</h1>
+<%= form_with scope: :book, url: books_path, local: true do |form| %>
+
+<p>
+<%=form.label :Title%><br>
+<%=form.text_field :Title%>
+</p>
+
+<p>
+<%=form.label :ISBN%><br>
+<%=form.text_field :ISBN%>
+</p>
+
+<p>
+<%=form.label :Year%><br>
+<%=form.text_field :Year%>
+</p>
+
+<p>
+<%= form.submit%>
+</p>
+<% end %>
