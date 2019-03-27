@@ -1,12 +1,19 @@
 # Book Controller
 class BooksController < ApplicationController
-  def new; end
+  def new
+    @book = Book.new
+  end
 
   def create
     @book = Book.new(book_params)
-    @book.save
-    redirect_to new_book_path
-    flash[:notice] = 'Book successfully created!'
+
+    if @book.save
+      flash[:success] = 'Book successfully created!'
+      redirect_to new_book_path
+    else
+      flash[:notice] = 'There were problems while creating the book'
+      render 'new'
+    end
   end
 
   private
