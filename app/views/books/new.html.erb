@@ -1,19 +1,19 @@
 <h1>New Book Form</h1>
-<%= form_with scope: :book, url: books_path, local: true do |form| %>
+<%= form_for @book do |form| %>
 
 <p>
-<%=form.label :Title%><br>
-<%=form.text_field :Title%>
+<%=form.label :title%><br>
+<%=form.text_field :title%>
 </p>
 
 <p>
-<%=form.label :ISBN%><br>
-<%=form.text_field :ISBN%>
+<%=form.label :isbn%><br>
+<%=form.text_field :isbn%>
 </p>
 
 <p>
-<%=form.label :Year%><br>
-<%=form.text_field :Year%>
+<%=form.label :year%><br>
+<%=form.text_field :year%>
 </p>
 
 <p>
