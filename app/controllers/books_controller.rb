@@ -8,9 +8,8 @@ class BooksController < ApplicationController
     redirect_to new_book_path
     flash[:notice] = 'Book successfully created!'
   end
-  def edit
-    
-  end
+
+  def edit; end
 
   private
 
