@@ -16,3 +16,12 @@ Feature: Edit a book
     And I change 'Year' from '2017' to '2018'
     And I click on 'Update Book'
     Then I should see 'Book was edited successfully!'
+
+    Scenario: Edit a created book with invalid details
+        When I am on the Edit Book Page
+        Then I expect to see "Edit Book Form"
+        And I fill 'Title' with ''
+        And I fill 'Isbn' with '4563728'
+        And I fill 'Year' with '2016'
+        And I click on 'Update Book'
+        Then I should see 'There were errors while updating your book!'
