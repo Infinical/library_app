@@ -1,6 +1,6 @@
 Feature: Edit a book
     As an author
-    So that i cna change details of a book
+    So that i can change details of a book
     I can edit the book
 
     Scenario: Edit a created book
