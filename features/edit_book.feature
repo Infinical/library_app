@@ -3,6 +3,11 @@ Feature: Edit a book
     So that i can change details of a book
     I can edit the book
 
+    Background: 
+    Given the following book exists
+    |   title           |        isbn               |   year    |
+    |   React           |        12345678           |   2017    |
+
     Scenario: Edit a created book
     When I am on the Edit Book Page
     Then I expect to see 'Edit Book Form'
