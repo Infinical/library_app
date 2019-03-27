@@ -14,5 +14,5 @@ Feature: Edit a book
     And I change 'Title' from 'React' to 'Redux'
     And I change 'Isbn' from '12345678' to '4567993'
     And I change 'Year' from '2017' to '2018'
-    And I click on 'Edit Book'
+    And I click on 'Update Book'
     Then I should see 'Book was edited successfully'
