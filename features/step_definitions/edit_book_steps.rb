@@ -9,3 +9,7 @@ Given('the following book exists') do |table|
     Book.create!(book)
   end
 end
+
+Then('I change {string} from {string} to {string}') do |field, _value1, value2|
+  fill_in field, with: value2
+end

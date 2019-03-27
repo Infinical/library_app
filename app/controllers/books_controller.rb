@@ -9,7 +9,9 @@ class BooksController < ApplicationController
     flash[:notice] = 'Book successfully created!'
   end
 
-  def edit; end
+  def edit
+    @book = Book.find(params[:id])
+  end
 
   private
 
