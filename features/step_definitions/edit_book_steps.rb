@@ -10,6 +10,6 @@ Given('the following book exists') do |table|
   end
 end
 
-Then('I change {string} from {string} to {string}') do |field, _value1, value2|
-  fill_in field, with: value2
+Then('I change {string} from {string} to {string}') do |field, original_value, replacement_value|
+  fill_in field, with: replacement_value
 end
