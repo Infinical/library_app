@@ -5,4 +5,6 @@ Feature: List of all books created
 
     Scenario: See a list of all books created
     When I am on All Books Page
-    
+    Then I should see 'React'
+    And I should see 'Ruby'
+    And I should see 'Javascript'
