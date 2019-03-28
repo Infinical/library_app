@@ -16,7 +16,7 @@ Feature: Edit a book
     And I change 'Year' from '2017' to '2018'
     And I click on 'Update Book'
     Then I should see 'Book was edited successfully!'
-    Then there should be no book with 'Isbn' '12345678'
+    Then there should be no book with isbn '12345678'
 
     Scenario: Edit a created book with invalid details
         When I am on the Edit Book Page
