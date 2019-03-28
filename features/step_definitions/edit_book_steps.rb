@@ -10,8 +10,8 @@ Given('the following book exists') do |table|
   end
 end
 
-Then('I change {string} from {string} to {string}') do |field, _original_value, replacement_value|
-  fill_in field, with: replacement_value
+Then('I change {string} from {string} to {string}') do |field, _original, _replacement|
+  fill_in field, with: replacement
 end
 
 # Then("there should be no book with isbn {string}") do |string|
