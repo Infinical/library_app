@@ -1,0 +1,13 @@
+<h1>List of Books</h1>
+
+<table>
+<tr>
+<th>Title</th>
+</tr>
+
+<%= @book.each do |book|%>
+<tr>
+<td><%= book.title%></td>
+</tr>
+<% end %>
+</table>
