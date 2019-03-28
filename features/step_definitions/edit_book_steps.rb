@@ -14,8 +14,7 @@ Then('I change {string} from {string} to {string}') do |field, _original, replac
   fill_in field, with: replacement
 end
 
-Then("there should be no book with isbn {string}") do |value|
+Then('there should be no book with isbn {string}') do |value|
   book = Book.find_by(isbn: value)
   expect(book).to be_nil
 end
-
