@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Author, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'Register an Author' do
+    describe 'DB Table' do
+      it { is_expected.to have_db_column :firstname }
+      it { is_expected.to have_db_column :lastname }
+    end
+  end
 end
