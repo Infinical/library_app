@@ -1,3 +1,4 @@
+# AUthor controller
 class AuthorsController < ApplicationController
   def new
     @author = Author.new
@@ -9,6 +10,9 @@ class AuthorsController < ApplicationController
     if @author.save
       flash[:success] = 'Registration successful!'
       redirect_to new_author_path
+    else
+      flash[:notice] = 'There were problems while registering the author'
+      render 'new'
     end
   end
 
