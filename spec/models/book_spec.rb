@@ -6,6 +6,7 @@ RSpec.describe Book, type: :model do
       it { is_expected.to have_db_column :title }
       it { is_expected.to have_db_column :isbn }
       it { is_expected.to have_db_column :year }
+      it { should belong_to(:author) }
     end
   end
 end
